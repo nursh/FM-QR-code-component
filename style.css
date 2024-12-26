@@ -1,0 +1,29 @@
+:root {
+  --slate-300-color: #D5E1EF;
+  --slate-900-color: #1F314F;
+  --slate-500-color: #68778D;
+
+  --text-preset-1: 22px;
+  --text-preset-2: 15px;
+
+  --spacing-lg: 40px;
+  --spacing-md: 24px;
+  --spacing-sm: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--slate-300-color);
+  font-family: 'Outfit', serif;
+}
+
+main {
+  background-color: #fff;
+}
