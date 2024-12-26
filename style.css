@@ -1,7 +1,7 @@
 :root {
   --slate-300-color: #D5E1EF;
-  --slate-900-color: #1F314F;
   --slate-500-color: #68778D;
+  --slate-900-color: #1F314F;
 
   --text-preset-1: 22px;
   --text-preset-2: 15px;
@@ -26,4 +26,30 @@ body {
 
 main {
   background-color: #fff;
+  width: 320px;
+  margin: 200px auto 10px;
+  padding: var(--spacing-sm);
+  padding-bottom: var(--spacing-lg);
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  color: var(--slate-900-color);
+  font-size: var(--text-preset-1);
+  text-align: center;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  font-size: var(--text-preset-2);
+  color: var(--slate-500-color);
+  padding: 0 var(--spacing-sm);
+  text-align: center;
+  margin: 0;
 }
