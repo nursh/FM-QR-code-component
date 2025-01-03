@@ -3,8 +3,8 @@
   --slate-500-color: #68778D;
   --slate-900-color: #1F314F;
 
-  --text-preset-1: 22px;
-  --text-preset-2: 15px;
+  --text-preset-1: 1.4rem;
+  --text-preset-2: 0.9rem;
 
   --spacing-lg: 40px;
   --spacing-md: 24px;
@@ -19,29 +19,35 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   background-color: var(--slate-300-color);
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
 }
 
-main {
+.card {
   background-color: #fff;
-  width: 320px;
-  margin: 200px auto 10px;
+  max-width: 20rem;
   padding: var(--spacing-sm);
   padding-bottom: var(--spacing-lg);
   border-radius: 10px;
+  text-align: center;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-h1 {
+h2 {
   color: var(--slate-900-color);
   font-size: var(--text-preset-1);
-  text-align: center;
   margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
 }
@@ -50,6 +56,5 @@ p {
   font-size: var(--text-preset-2);
   color: var(--slate-500-color);
   padding: 0 var(--spacing-sm);
-  text-align: center;
   margin: 0;
 }
